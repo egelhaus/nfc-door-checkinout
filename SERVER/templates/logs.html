@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Room Logs</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>PC Room Logs</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>UID</th>
+            <th>Check-in Time</th>
+            <th>Check-out Time</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.id }}</td>
+            <td>{{ log.uid }}</td>
+            <td>{{ log.checkin_time }}</td>
+            <td>{{ log.checkout_time or "Still checked in" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

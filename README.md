@@ -1,1 +1,2 @@
 # nfc-door-checkinout
+This is an Repo for my new Project, where an Raspberry-Pi 4 will connect to an Ubuntu 22.04 Server, when an NFC Tag is scanned at the RPI4 and an Notification will be sent to an Phone, to select Checkin or Checkout, to count the Time in the PC Room.
