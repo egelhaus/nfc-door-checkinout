@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-import os
-import mysql.connector
+import osghvkvgjhgbghjb
+import mysql.connectorhgkvhvghohgvhgvkghvghkv
 from datetime import datetime
 
 # Lade die Umgebungsvariablen aus der .env Datei
