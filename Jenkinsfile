@@ -12,6 +12,7 @@ pipeline {
                     exit 0
                 """
                   }
+        }
         stage('Initialize Python and needed Configs') {
             steps {
                 sh """
