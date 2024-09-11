@@ -16,7 +16,7 @@ pipeline {
         stage('Initialize Python and needed Configs') {
             steps {
                 sh """
-                   cp /root/.env
+                   cp /root/.env .
                    python3 -m venv venv
                    . venv/bin/activate
                    exit 0
